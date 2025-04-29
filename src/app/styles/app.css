@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital@0;1&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-neon {
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px #08416c,
+      0 0 30px #08416c,
+      0 0 40px #08416c;
+  }
+}
