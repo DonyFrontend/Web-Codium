@@ -8,9 +8,12 @@
   .text-neon {
     text-shadow:
       0 0 5px #fff,
-      0 0 10px #fff,
       0 0 20px #1E90FF,
       0 0 30px #1E90FF,
       0 0 40px #1E90FF;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
