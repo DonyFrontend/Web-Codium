@@ -57,7 +57,7 @@ const WelcomePage = () => {
                     transition={{ duration: 2, ease: "linear", delay: 1 }}
                     className="text-xl text-center"
                   >
-                    With <span className="text-neon">CollabX</span>
+                    With <span className="text-neon">Web-Codium</span>
                   </motion.h4>
                 </div>
               </motion.div>

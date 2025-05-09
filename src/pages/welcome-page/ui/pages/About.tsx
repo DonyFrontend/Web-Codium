@@ -12,27 +12,27 @@ const About = () => {
     <div id="about" className="flex flex-col gap-y-28 items-center">
       <div className="flex flex-col gap-y-16 items-center">
         <TextBlock title="About">
-          <span className="text-neon">CollabX</span> is a space-themed platform
+          <span className="text-neon">Web-Codium</span> is a space-themed platform
           for real-time code collaboration. Whether you're coding solo or with a
-          team, CollabX provides an immersive environment where distance fades
+          team, Web-Codium provides an immersive environment where distance fades
           and ideas flow. Inspired by the endless void of space, we built
-          CollabX to be fast, minimal, and deeply connected — just like the
+          Web-Codium to be fast, minimal, and deeply connected — just like the
           developers who use it. With <span className="text-neon">GitHub</span>{" "}
           integration, inline code comments, team management, and project
           syncing, it's everything you need to collaborate without boundaries.
         </TextBlock>
         <img src={arrow_down_img} alt="Arrow" className="w-[50px] h-[50px]" />
-        <TextBlock title="What is CollabX?">
-          <span className="text-neon">CollabX</span> is more than just a tool —
+        <TextBlock title="What is Web-Codium?">
+          <span className="text-neon">Web-Codium</span> is more than just a tool —
           it's a digital space station for developers. Think of it as a command
           center where your team can write code, leave comments, and communicate
           in real time. No more switching tabs or syncing files manually. With a
           beautiful interface, cosmic animations, and developer-focused
-          features, CollabX transforms the way you work together on code.
+          features, Web-Codium transforms the way you work together on code.
         </TextBlock>
         <img src={arrow_down_img} alt="Arrow" className="w-[50px] h-[50px]" />
         <TextBlock title="Features Overview">
-          From real-time editing to integrated chat, CollabX is packed with
+          From real-time editing to integrated chat, Web-Codium is packed with
           tools that make teamwork easy. Manage your repositories, track
           progress, and keep conversations connected — all within one unified
           interface.
@@ -41,7 +41,7 @@ const About = () => {
 
       <div className="w-full flex flex-col gap-y-8 items-center">
         <div className="flex flex-col gap-y-4">
-          <h3 className="text-4xl">Why choose CollabX ?</h3>
+          <h3 className="text-4xl">Why choose Web-Codium ?</h3>
           <span className="h-[1px] w-full bg-line"></span>
         </div>
         <div className="w-full flex flex-col shadow-neon gap-y-8 border border-[#30363d] rounded-button_radius py-4 hover:-translate-y-3 transition-all">
@@ -106,9 +106,9 @@ const About = () => {
           <div>
             <p className="text-[#90959b] text-[25px]">
               That’s up to you! Dive into your code, invite your team, and let
-              CollabX handle the rest. Smooth collaboration is just a click
+              Web-Codium handle the rest. Smooth collaboration is just a click
               away. Whether you're starting a small side project or launching a
-              large-scale app, CollabX gives you the tools and flexibility to
+              large-scale app, Web-Codium gives you the tools and flexibility to
               grow. Your next big idea is waiting — and we’re here to help you
               build it.
             </p>
