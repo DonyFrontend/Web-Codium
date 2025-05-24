@@ -2,11 +2,14 @@ import { ReactParticles } from "@/widgets/particles";
 import { motion, useScroll, useTransform } from "motion/react";
 import github_logo from "@/shared/assets/icons/github.svg";
 import { About } from "./pages/About";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { Footer } from "@/widgets/footer";
+import { useAuthStore } from "@/app/store/authStore";
 
 const WelcomePage = () => {
   const ref = useRef(null);
+  const [loading, setLoading] = useState(false);
+  const { loginUser } = useAuthStore();
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -15,6 +18,10 @@ const WelcomePage = () => {
 
   const scale = useTransform(scrollYProgress, [0, 1], [1, 0]);
   const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
+  
+  if (loading) {
+    return <h2>Loading</h2>
+  }
 
   return (
     <div className="font-exo2">
@@ -68,7 +75,7 @@ const WelcomePage = () => {
                 transition={{ duration: 2, ease: "linear", delay: 1 }}
                 className="w-full flex justify-around items-center"
               >
-                <motion.button className="flex gap-x-2 text-nowrap items-center p-2 bg-main hover:bg-hover transition-colors rounded-button_radius">
+                <motion.button onClick={() => loginUser(setLoading)} className="flex gap-x-2 text-nowrap items-center p-2 bg-main hover:bg-hover transition-colors rounded-button_radius">
                   <img
                     src={github_logo}
                     className="w-[30px] h-[30px]"
